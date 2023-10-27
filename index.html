@@ -1,0 +1,459 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *
+       {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        background-color: black;
+       }
+       .Logo
+       {
+        width: 15%;
+        height: 45px;
+        margin-left: 6%
+       }
+       .Delivery img
+       {
+        margin-right: 4%;
+        width: 20%;
+        height: 25px;
+       }
+       .Pickup img
+       {
+        margin-right: 8%;
+        width: 20%;
+        height: 25px;
+       }
+       .Left_side
+       {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 8%;
+       }
+       .Bucket 
+       {
+        width: 60%;
+        height: 40px;
+        margin-right: 20%;
+       }
+       .Bucket img
+       {
+        background-color: black;
+       }
+       .Right_side button
+       {
+        width: 100%;
+        height: 35px;
+        margin-top: 4%;
+        color: #ffffff;
+        background-color: red;
+       }
+       nav
+       {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 2%;
+       }
+       .Right_side
+       {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 8%;
+       }
+       .bar
+       {
+        margin-top: 4%;
+       }
+       .Pickup
+       {
+        display: flex;
+        margin-top: 3%;
+        font-size: large;
+        margin-left: 15%;
+        color: #ffffff;
+       }
+       .Delivery
+       {
+        margin-top: 3%;
+        display: flex;
+        margin-left: 8%;
+        color: #ffffff;
+        border: 2px solid red;
+        border-radius: 5%;
+       }
+       .Content_Image img
+       {
+        margin-top: 2%;
+        width: 100%;
+        height: 500px;
+       }
+       h3
+       {
+        margin-top: 5%;
+        margin-left: 2%;
+        font-size: 17px;
+       }
+       .Reorder button
+       {
+        color: white;
+        background-color: red;
+        width: 40%;
+        height: 30px;
+        border-radius: 5%;
+        margin-left: 32%;
+        margin-top: 1%;
+       }
+       .Menu
+       {
+        color: #ffffff;
+        font-size: x-large;
+        margin: 2%;
+        margin-left: 8%;
+        font-family: Sans-serif;
+       }
+       .Menu span
+       {
+        border-bottom: 3px solid red;
+       }
+       .Menu_Content
+       {
+        display: flex;
+        justify-content: center;
+        margin-left: 2%;
+       }
+       .K
+       {
+        width: 20%;
+        height: 400px;
+        background-color: #1c1816;
+        margin-right: 2%;
+       }
+       .M
+       {
+        width: 20%;
+        height: 400px;
+        background-color: #1c1816;
+        margin-right: 2%;
+       }
+       .W
+       {
+        width: 20%;
+        height: 400px;
+        background-color: #1c1816;
+        margin-right: 2%;
+       }
+       .KC
+       {
+        width: 20%;
+        height: 400px;
+        background-color: #1c1816;
+        margin-right: 2%;
+       }
+       .Top_Border_Best_Seller
+       {
+        background-color: red;
+        border-radius: 1px;
+        height: 22px;
+        width: 15px;
+        margin-left: 1%;
+        margin-right: 1%;
+       }
+       .Best_Seller_Price
+       {
+        background-color: red;
+        border-radius: 5px 1px 1px 5px;
+        height: 27px;
+        width: 30%;
+        margin-top: 3%;
+        float: right;
+       }
+       .Top_Border
+       {
+        display: flex;
+        justify-content: center;
+        background-color: #1c1816;
+       }
+       h6
+       {
+        color: #fff;
+        background-color: #1c1816;
+        font-size: 23px;
+        margin-top: 6%;
+        margin-left: 4%;
+       }
+       .Price
+       {
+        color: #fff;
+        display: flex;
+        background-color: red;
+       }
+       .Price h2
+       {
+        margin-left: 3%;
+        background-color: red;
+       }
+       .Price h2 span
+       {
+        font-size: 20px;
+        background-color: red;
+       }
+       .Best_Seller_img img
+       {
+        width: 98%;
+        height: 250px;
+        background-color: #1c1816;
+       }
+       .Best_Seller_img img:hover
+       {
+        width: 100%;
+        height: 255px;
+        background-color: #1c1816;
+       }
+       .Best_Seller_img
+       {
+        background-color: #1c1816;
+       }
+       p
+       {
+        color: #fff;
+        background-color: #1c1816;
+        margin-left: 4%;
+       }
+       h4
+       {
+        font-size: x-large;
+        color: #fff;
+        background-color: #1c1816;
+        margin-left: 4%;
+       }
+       h3
+       {
+        color: #fff;
+        background-color: #1c1816;
+        margin-left: 4%;
+       }
+       .Top_Deals_img img
+       {
+        width: 97%;
+        height: 210px;
+        background-color: #1c1816;
+       }
+       .Top_Deals_img img:hover
+       {
+        transition: 0.2s;
+        width: 100%;
+        height: 225px;
+        background-color: #1c1816;
+       }
+       .Top_Deals_img
+       {
+        background-color: #1c1816;
+       }
+       .ADC
+       {
+        background-color: red;
+        font-size: 15px;
+        color: #fff;
+        width: 45%;
+        height: 30px;
+        margin-left: 28%;
+        margin-top: 11%;
+        border: 2px solid red;
+        font-family: sans-serif;
+        border-radius: 5px;
+       }
+       .ADC:hover
+       {
+        background-color: #fff;
+        color: red;
+       }
+       .New_Content img
+       {
+        width: 45%;
+        height: 400px;
+        border-radius: 10px;
+
+       }
+       .New_Content
+       {
+        display: flex;
+        margin-top: 8%;
+        margin-left: 8%;
+       }
+       .img2
+       {
+        margin-left: 2%;
+       }
+
+
+    </style>
+</head>
+<body>
+    <Header>
+        <nav>
+            <div class="Left_side">
+               <div class="bar"> <i class="fa-solid fa-bars fa-xl" style="color: #ffffff;"></i></div>
+                <img class="Logo" src="KFC Logo.png" alt="KGC Logo">
+                <div class="Delivery">
+                    <img src="Delivery Logo.png" alt="Delivery Logo"><h3>DELIVERY</h3>
+                </div>
+                <div class="Pickup">
+                    <img src="Pickup Logo.png" alt="Pickup Logo"><h3>PICKUP</h3>
+                </div>
+            </div>
+            <div class="Right_side">
+                <img class="Bucket" src="KFC Bucket Image.png" alt="KGC Bucket Image">
+                <button>Login</button>
+            </div>
+        </nav>
+    </Header>
+    <div class="Content_Image">
+        <img src="Main Content Image.jpg" alt="Content Image">
+    </div>
+    <div class="Reorder">
+        <button>REORDER</button>
+    </div>
+    <h1 class="Menu"><span>BEST</span> SELLERS</h1>
+    <div class="Menu_Content">
+        <div class="K">
+            <div class="Top_Border">
+                <div class="Top_Border_Best_Seller"></div>
+                <div class="Top_Border_Best_Seller"></div>
+                <div class="Top_Border_Best_Seller"></div>
+            </div>
+            <h6>Krunch Burger</h6>
+            <div class="Best_Seller_Price">
+                <div class="Price">
+                    <h2><span>Rs</span>270</h2>
+                </div>
+            </div>
+            <div class="Best_Seller_img">
+                <img src="Krunch Burger.png" alt="">
+            </div>   
+       </div>
+        <div class="M">
+            <div class="Top_Border">
+                <div class="Top_Border_Best_Seller"></div>
+                <div class="Top_Border_Best_Seller"></div>
+                <div class="Top_Border_Best_Seller"></div>
+            </div>
+            <h6>Mighty Zinger</h6>
+            <div class="Best_Seller_Price">
+                <div class="Price">
+                    <h2><span>Rs</span>700</h2>
+                </div>
+            </div>
+            <div class="Best_Seller_img">
+                <img src="Mighty Zinger.png" alt="">
+            </div> 
+        </div>
+        <div class="W">
+            <div class="Top_Border">
+                <div class="Top_Border_Best_Seller"></div>
+                <div class="Top_Border_Best_Seller"></div>
+                <div class="Top_Border_Best_Seller"></div>
+            </div>
+            <h6>Hot Wings Bucket</h6>
+            <div class="Best_Seller_Price">
+                <div class="Price">
+                    <h2><span>Rs</span>610</h2>
+                </div>
+            </div>
+            <div class="Best_Seller_img">
+                <img src="Wings Bucket.png" alt="">
+            </div> 
+        </div>
+        <div class="K">
+            <div class="Top_Border">
+                <div class="Top_Border_Best_Seller"></div>
+                <div class="Top_Border_Best_Seller"></div>
+                <div class="Top_Border_Best_Seller"></div>
+            </div>
+            <h6>Krunch Combo</h6>
+            <div class="Best_Seller_Price">
+                <div class="Price">
+                    <h2><span>Rs</span>520</h2>
+                </div>
+            </div>
+            <div class="Best_Seller_img">
+                <img src="Combo.png" alt="">
+            </div> 
+        </div>
+    </div>
+
+    <!-- Next Menu Code Starting From Here -->
+
+    <h1 class="Menu"><span>TOP D</span>EALS</h1>
+    <div class="Menu_Content">
+        <div class="K">
+            <div class="Top_Border">
+                <div class="Top_Border_Best_Seller"></div>
+                <div class="Top_Border_Best_Seller"></div>
+                <div class="Top_Border_Best_Seller"></div>
+            </div>
+            <div class="Top_Deals_img">
+                <img src="Deal1.png" alt="">
+            </div>   
+            <h4>Crispy Duo Box</h4>
+            <br>
+            <p>Turn up the fun with 5 pcs Hot & Crispy <br> Chicken + 1 Large fries + 2 Regular drinks</p>
+            <h3>Rs 1250</h3>
+            <button class="ADC">+ Add To Cart</button>
+       </div>
+        <div class="M">
+            <div class="Top_Border">
+                <div class="Top_Border_Best_Seller"></div>
+                <div class="Top_Border_Best_Seller"></div>
+                <div class="Top_Border_Best_Seller"></div>
+            </div>
+            <div class="Top_Deals_img">
+                <img src="Deal2.png" alt="">
+            </div> 
+            <h4>Zinger Stacker Combo</h4>
+            <br>
+            <p>1 Zinger Stacker + 1 Regular fries + 1 <br> Regular drink</p>
+            <h3>Rs 850</h3>
+            <button class="ADC">+ Add To Cart</button>
+        </div>
+        <div class="W">
+            <div class="Top_Border">
+                <div class="Top_Border_Best_Seller"></div>
+                <div class="Top_Border_Best_Seller"></div>
+                <div class="Top_Border_Best_Seller"></div>
+            </div>
+            <div class="Top_Deals_img">
+                <img src="Deal3.png" alt="">
+            </div> 
+            <h4>Twister Combo</h4>
+            <br>
+            <p>Twister + 1 Regular fries + 1 Regular drink</p>
+            <h3>Rs 670</h3>
+            <button class="ADC">+ Add To Cart</button>
+        </div>
+        <div class="K">
+            <div class="Top_Border">
+                <div class="Top_Border_Best_Seller"></div>
+                <div class="Top_Border_Best_Seller"></div>
+                <div class="Top_Border_Best_Seller"></div>
+            </div>
+            <div class="Top_Deals_img">
+                <img src="Deal4.png" alt="">
+            </div> 
+            <h4>Family Festival 3</h4>
+            <br>
+            <p>An ultimate meal for the fam. It includes 4 <br> Zinger burgers + 4 pieces Hot and Crispy...</p>
+            <h3>Rs 2450</h3>
+            <button class="ADC">+ Add To Cart</button>
+        </div>
+    </div>
+    <div class="New_Content">
+        <img src="Content 2.png" alt="">
+        <img class="img2" src="Content 02.png" alt="">
+    </div>
+</body>
+</html>
